@@ -10,7 +10,8 @@ do
 	str="`date +%F` - $i"
 	echo $str > data/activity_created.txt
 	git add *
-	git commit -m "Create activity"
+	message=`shuf -n 1 data/messages.txt`
+	git commit -m "$message"
 	git push
 	sleep "$((3 + ($RANDOM % 10) * 3))"m
 done
