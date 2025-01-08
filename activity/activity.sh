@@ -2,7 +2,7 @@
 
 activityCount=$((2 + $RANDOM % 24))
 echo "Creating activities: $activityCount"
-sleep "$((13 + ($RANDOM % 10) * 3))"m
+#sleep "$((13 + ($RANDOM % 10) * 3))"m
 
 for i in $(seq 1 $activityCount);
 do
